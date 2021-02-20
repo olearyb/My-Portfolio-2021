@@ -24,7 +24,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/vue-typed-js.js'
+    '~/plugins/vue-typed-js.js',
+    '~/plugins/vue-scrollactive.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -58,7 +59,10 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      options: {
+        customProperties: true
+      },
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -67,7 +71,18 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+          background: "#1B1D1F"
+        },
+        light: {
+          primary: '#000',
+          secondary: '#424242',
+          accent: '#82B1FF',
+          error: '#FF5252',
+          info: '#2196F3',
+          success: '#4CAF50',
+          warning: '#FFC107',
+          background: "#FFFFFF"
         }
       }
     }

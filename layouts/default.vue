@@ -1,89 +1,85 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer
-      v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
-      app
-    >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
     <v-app-bar
-      :clipped-left="clipped"
+      color="rgb(255, 255, 255, 0.8)"
+      flat
       fixed
       app
     >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
+    <nuxt-link to="/">
       <v-toolbar-title v-text="title" />
+    </nuxt-link>
+      
       <v-spacer />
       <v-btn
+        v-if="$vuetify.breakpoint.smAndDown"
         icon
         @click.stop="rightDrawer = !rightDrawer"
       >
         <v-icon>mdi-menu</v-icon>
       </v-btn>
+      <v-btn 
+        class="mx-5"
+        depressed
+        plain
+        :ripple="false"
+        v-if="$vuetify.breakpoint.mdAndUp"
+        @click="$vuetify.goTo('#design')"
+      >
+        Design
+      </v-btn>
+      <v-btn 
+        class="mx-5"
+        depressed
+        plain
+        :ripple="false"
+        v-if="$vuetify.breakpoint.mdAndUp"
+        @click="$vuetify.goTo('#research')"
+      >
+        Research
+      </v-btn>
+      <v-btn 
+        v-if="$vuetify.breakpoint.mdAndUp"
+        class="mx-5"
+        depressed
+        plain
+        :ripple="false"
+      >About</v-btn>
     </v-app-bar>
     <v-main>
       <v-container>
         <nuxt />
       </v-container>
     </v-main>
-    <v-navigation-drawer
+    <v-dialog
       v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
+      fullscreen
+      hide-overlay
     >
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <v-card>
+      <v-toolbar>
+        <v-spacer></v-spacer>
+        <v-btn
+          icon
+          color="#000"
+          @click="rightDrawer = false"
+        >
+          <v-icon>
+            mdi-close
+          </v-icon>
+        </v-btn>
+      </v-toolbar>
+    </v-card>
+    </v-dialog>
     <v-footer
       :absolute="!fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-col
+      class="text-center"
+    >
+      <span>Designed & built by Barra O'Leary &copy; {{ new Date().getFullYear() }}</span>
+    </v-col>
     </v-footer>
   </v-app>
 </template>
@@ -110,8 +106,36 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: "Barra O'Leary"
     }
   }
 }
 </script>
+
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.theme--dark.v-application {
+  background-color: var(--v-background-base, #121212) !important;
+}
+.theme--light.v-application {
+  background-color: var(--v-background-base, white) !important;
+}
+
+.container {
+  max-width: 100vw;
+  padding: 0px;
+}
+
+.nuxt-link:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.nuxt-link {
+    color: #000;
+}
+</style>
