@@ -67,7 +67,7 @@
                     <v-img
                         contain
                         class="context-img"
-                        :src="require('~/assets/images/Context_FlowL.png')"
+                        :src="require('~/assets/images/Context_Flow.png')"
                      />
             </v-col>
         </v-row>

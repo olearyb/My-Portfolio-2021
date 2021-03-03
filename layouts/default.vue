@@ -23,28 +23,43 @@
         depressed
         plain
         :ripple="false"
-        v-if="$vuetify.breakpoint.mdAndUp"
-        @click="$vuetify.goTo('#design')"
+        v-if="$vuetify.breakpoint.mdAndUp && this.$route.path == '/'"
+        @click="() => this.$vuetify.goTo('#design')"
       >
-        Design
+        Case Studies
       </v-btn>
       <v-btn 
         class="mx-5"
         depressed
         plain
         :ripple="false"
-        v-if="$vuetify.breakpoint.mdAndUp"
-        @click="$vuetify.goTo('#research')"
+        v-if="$vuetify.breakpoint.mdAndUp && this.$route.path != '/'"
+        @click="() => this.$router.push('/#design')"
       >
-        Research
+        Case Studies
       </v-btn>
+
       <v-btn 
-        v-if="$vuetify.breakpoint.mdAndUp"
         class="mx-5"
         depressed
         plain
         :ripple="false"
-      >About</v-btn>
+        v-if="$vuetify.breakpoint.mdAndUp && this.$route.path == '/'"
+        @click="() => this.$vuetify.goTo('#research')"
+      >
+        About
+      </v-btn>
+      <v-btn 
+        class="mx-5"
+        depressed
+        plain
+        :ripple="false"
+        v-if="$vuetify.breakpoint.mdAndUp && this.$route.path != '/'"
+        @click="() => this.$router.push('/#research')"
+      >
+        About
+      </v-btn>
+
     </v-app-bar>
     <v-main>
       <v-container>

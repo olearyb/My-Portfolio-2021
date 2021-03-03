@@ -2,21 +2,18 @@
   <div>
     <hero />
     <projects />
-    <about />
   </div>
 </template>
 
 <script>
 import Projects from '~/components/Projects.vue';
 import Hero from '~/components/Hero.vue';
-import About from '~/components/About.vue';
 
 
 export default {
   components: {
     Projects,
     Hero,
-    About
   }
 }
 </script>
