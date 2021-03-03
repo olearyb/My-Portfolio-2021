@@ -42,7 +42,7 @@
             </v-row>
             <nuxt-link to="/design">
             <v-row 
-                class="my-15 px-15 justify-center"
+                class="my-15 px-15 justify-center cases"
                 :class="{'ma-15': $vuetify.breakpoint.mdAndUp}"
                 >
                 <v-col cols="12" md="5">
@@ -51,15 +51,35 @@
                         :src="require('~/assets/images/LowFi.png')"
                      />
                 </v-col>
-                <v-col cols="12" md="5">
-                    <h2 class="mb-5">
+                <v-col cols="12" md="5 cases">
+                    <h2 class="mb-5 under">
                         Designing interactive skill-building tools to support student wellbeing
                     </h2>
-                    <p class="sub">I collaborated with the MyUse team of University College Cork to design a set of web tools aimed at supporting student health and wellbeing.</p>
+                    <p class="sub under">
+                        I collaborated with the MyUse team of University College Cork to design a set of web tools aimed at supporting student health and wellbeing.
+                    </p>
+                    <div class="py-2"
+                    >
+                            <v-chip outlined  class="ma-1 chip">
+                                UX DESIGN
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                SKETCH
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                PROTOTYPING
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                USER INTERVIEWS
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                USER RESEARCH
+                            </v-chip>
+                        </div>
                 </v-col>
             </v-row>
             </nuxt-link>
-            <nuxt-link to="/breath">
+            <nuxt-link to="/dev_breath">
             <v-row 
                 class="my-15 px-15  justify-center"
                 :class="{'ma-15': $vuetify.breakpoint.mdAndUp}"
@@ -71,14 +91,36 @@
                         />
                     </v-col>
                     <v-col cols="12" md="5">
-                        <h2>
+                        <h2 class="mb-5">
                             Developing the Mindful Breath tool
                         </h2>
+                        <p class="sub">
+                            This case study goes into more details about how I implemented the usability findings from the deisign stage.
+                             This case study details the implementation and how I used front end technology to create the Mindful Breath exercise. 
+                        </p>
+                        <div class="py-2"
+                    >
+                            <v-chip outlined  class="ma-1 chip">
+                                UX DESIGN
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                FRONT END DEV
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                VUE JS
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                NUXT JS
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                VUETIFY
+                            </v-chip>
+                        </div>
                     </v-col>
                 
             </v-row>
             </nuxt-link>
-            <nuxt-link to="/values">
+            <nuxt-link to="/dev_values">
             <v-row 
                 class="my-15 px-15  justify-center"
                 :class="{'ma-15': $vuetify.breakpoint.mdAndUp}"
@@ -90,9 +132,31 @@
                      />
                 </v-col>
                 <v-col cols="12" md="5">
-                    <h2>
+                    <h2 class="mb-5">
                         Developing the Values Compass tool
                     </h2>
+                    <p class="sub">
+                            This case study goes into more details about how I implemented the usability findings from the deisign stage.
+                             This case study details the implementation and how I used front end technology to create the Values Compass tool. 
+                    </p>
+                    <div class="py-2"
+                    >
+                            <v-chip outlined  class="ma-1 chip">
+                                UX DESIGN
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                FRONT END DEV
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                VUE JS
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                NUXT JS
+                            </v-chip>
+                            <v-chip outlined class="ma-1">
+                                VUETIFY
+                            </v-chip>
+                        </div>
                 </v-col>
             </v-row>
             </nuxt-link>
@@ -176,7 +240,7 @@
         <v-container>
             <v-row class=" my-10 px-15 text-center justify-center" id="research">
                 <v-col class="text-center justify-center">
-                    <h2>User Research</h2>
+                    <h2>About Me</h2>
                 </v-col>
             </v-row>
              <v-row class=" px-15 text-center justify-center">
@@ -188,7 +252,7 @@
                         to help clients at different stages of their research and development cycles:</p>
                 </v-col>
             </v-row>
-            <v-row class="my-15 px-15 text-center justify-center">
+            <v-row class="my-5 px-15 text-center justify-center">
                 <v-col cols="12" md="8">
                     <div class="py-2 text-center"
                     >
@@ -213,7 +277,7 @@
                         </div>
                 </v-col>
             </v-row>
-            <v-row class="px-15 text-center justify-center">
+            <v-row class="mt-5 px-15 text-center justify-center">
                 <v-col cols="12" md="8">
                     <p 
                         class="py-2 text-center"
@@ -304,7 +368,33 @@
             </v-row>
             <v-row class="ma-10 px-10 text-center justify-center">
                 <v-col cols="12" md="8">
-                    <h2>Let's Connect!</h2>
+                    <h2 class="py-5">Let's Connect! &#x1F517;</h2>
+                    <ul class="clients social_links justify-center pb-10">
+                    <li>
+                        <a href="https://www.linkedin.com/in/barraoleary/" target="_blank">
+                            <v-img
+                            class="text-center social "
+                            :src="require('~/assets/images/social/linkedin.svg')"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/barraoleary" target="_blank">
+                            <v-img
+                            class="text-center social"
+                            :src="require('~/assets/images/social/behance.svg')"
+                            />
+                     </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/olearyb?tab=repositories" target="_blank">
+                            <v-img
+                            class="text-center social "
+                            :src="require('~/assets/images/social/github.svg')"
+                            />
+                     </a>
+                    </li>
+                </ul>
                 </v-col>
             </v-row>
             
@@ -366,19 +456,37 @@ a {
     opacity: 0.5;
 }
 
-.svg:hover {
+.social {
+     width: 100%;
+    height: auto;
     opacity: 1;
 }
 
+
+.social:hover {
+    opacity: 0.5;
+}
+
+
 ul {
     list-style: none;
+    padding-left: 0 !important;
 }
 
 li {
     margin: 1.25rem;
+    padding-left: 0;
 }
 
+
 .clients {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social_Links {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -395,9 +503,10 @@ li {
     color: #000;
 }
 
-a:hover {
+.cases a.under:hover {
     text-decoration: underline;
     color: #665DF5;
+    cursor: pointer;
 }
 
 .nuxt-link {

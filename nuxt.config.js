@@ -25,7 +25,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/vue-typed-js.js',
-    '~/plugins/vue-scrollactive.js'
+    '~/plugins/vue-scrollactive.js',
+    
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -43,6 +44,11 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+
+    // nuxt highlight
+    ['nuxt-highlightjs', {
+      style: 'night-owl'
+    }]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

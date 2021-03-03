@@ -108,14 +108,14 @@
         </v-navigation-drawer>
         <v-row class="pa-10 justify-center">
             <v-col cols="10" md="8" class="text-center">
-                <h2 id="title">Designing Interactive, Skill-Building Tools to Support Student Wellbeing:<br> Mindful Breathing Exercise</h2>
+                <h2 id="title">Designing Interactive, Skill-Building Tools to Support Student Wellbeing:<br> Values Compass</h2>
             </v-col>
         </v-row>
         <v-row class="justify-center" id="overview">
             <v-col cols="10" md="6" class="text-center lo">
                 <v-img
                     class="text-center"
-                    :src="require('~/assets/images/main_img_breath.png')"
+                    :src="require('~/assets/images/main_img_values.png')"
                      />
             </v-col>
         </v-row>
@@ -286,8 +286,9 @@
         <v-row class="justify-center my-10">
             <v-col cols="10" md="8">
                 <h2 class="pb-10">Design Brief</h2>
-                <p>
-                    I was given a suggestion by the project owners to design a tool inspired by a simple mindfulness exercise of being present. 
+                <p class="pubs">
+                    I was given a suggestion by the project owners to design a tool that replicated an Acceptance and Commitement Therapy (ACT) practice known as the <b>Values Compass</b> 
+                    - the Values Compass idea was originally developed by <a href="https://thehappinesstrap.com/upimages/Complete_Worksheets_2014.pdf" target="_blank">Russ Harris.</a> 
                 </p>
             </v-col>
         </v-row>
@@ -298,71 +299,69 @@
                     <v-img
                         contain
                         class="challenge-img"
-                        :src="require('~/assets/images/Brief.png')"
+                        :src="require('~/assets/images/values_brief.png')"
                      />
             </v-col>
         </v-row>
         <v-row class="justify-center my-10">
             <v-col  cols="10" md="8">
-                <p>As I practice mindfulness semi-regularly in my own life, 
-                     I already had a similar idea in mind to the design brief that was given to me.</p>
-            </v-col>
-        </v-row>
-        <v-row 
-                class="justify-center my-10"
-                
-            >
-            <v-col cols="10" md="4"  
-                :class="{'pr-15': $vuetify.breakpoint.lgAndUp}"
-                class="pt-10 "
-                
-            ><div></div>
-                     <p>I was previously introduced to the practice of <b>Square Breathing</b>, whereby one 
-                     focuses on each stage of their breath by counting an equal set of numbers. </p> 
-                    <p> For example: Inhale for 5 seconds, hold for 5, exhale for 5, hold for 5 and repeat for 2 to 3 minutes. </p>
-            </v-col>
-            <v-col cols="10" md="4" class="px-10" 
-                :class="{'px-0': $vuetify.breakpoint.lgAndUp}"
-            >
-                    <v-img
-                        contain
-                        class="context-img"
-                        :src="require('~/assets/images/lungs.png')"
-                     />
+                <p>
+                    In contrast to the Mindful Breathing exercise that I developed, I had no prior experience or exposure to ACT or the Values Compass. Therefore, my ideation had to rely on
+                    immediate research of the original paper design coupled with any existing digital applications of the Values Compass.
+                </p>
             </v-col>
         </v-row>
         <v-row class="px-15 mx-15" id="competitors">
             <v-divider></v-divider>
         </v-row>
-        <v-row class="justify-center my-10">
+        <v-row class="justify-center my-5">
             <v-col cols="10" md="8">
                 <h2 class="pb-10">Competitor Analysis</h2>
                 <p>
-                    While I knew I wanted to design a web tool that was essentially a walkthrough 
-                    of performing a mindful breathing exercise known as Square Breathing, the first step was to perform a competitive 
-                    analysis of a handful of competitor web tools and native apps that offered something 
-                    similar in terms of either breathing exercies or mindfulness in general. 
+                    While the publicly available paper worksheets authored by Russ Harris acted as the primary informational framework for my designs, 
+                    it was necessary for me to research digital versions of the tool. There were 2 native mobile applications that seemed to 
+                    offer the Values Compass activity. These were:
                 </p>
-                <p>    
-                    The goal of the competitor analysis was twofold:
+                <p>
                     <ol>
-                        <li>
-                            Identify <b>Key Product Features</b> that I felt were necessary, given the characteristics identified from the Persona-building workshops (see The Challenge section above).
-                        </li>
-                        <li>
-                            Identify areas that are lacking or could be <b>improved</b>, especially in terms of <b>interaction.</b> 
-                        </li>
+                        <li>ACT Coach</li>
                     </ol>
                 </p>
             </v-col>
         </v-row>
-        <v-row class="justify-center my-10">
-            <v-col cols="10" md="8"
-                :class="{'px-0': $vuetify.breakpoint.mdAndUp}"
-            >
-                    <v-img
+        <v-row class="justify-center my-5">
+            <v-col cols="10" md="6">
+                <v-img
                         class="challenge-img"
-                        :src="require('~/assets/images/Competitors.png')"
+                        contain
+                        :src="require('~/assets/images/ACT Coach.png')"
+                 />
+            </v-col>
+        </v-row>
+        <v-row class="justify-center my-5">
+            <v-col cols="10" md="8">
+                <p>
+                    <ol start="2">
+                        <li>ACT iCoach: Acceptance Commitment Therapy App</li>
+                    </ol>
+                </p>
+            </v-col>
+        </v-row>
+        <v-row class="justify-center my-5">
+            <v-col cols="10" md="6" class=" text-center">
+                <v-img
+                        class="challenge-img"
+                        contain
+                        :src="require('~/assets/images/ACT iCoach.png')"
+                     />
+            </v-col>
+        </v-row>
+        <v-row class="justify-center my-5">
+            <v-col cols="10" md="6">
+                <v-img
+                        class="challenge-img"
+                        contain
+                        :src="require('~/assets/images/values_competitors.png')"
                      />
             </v-col>
         </v-row>
@@ -373,17 +372,19 @@
                         <b>Competitor Analysis Results:</b>
                     </p>
                     <p>
-                        <b>Xhalr</b> and <b>Breathe</b> were the closest competitors 
-                        in terms of <i>accessibility</i> (both were free) and the <i>functionaility</i> 
-                        that I wanted to incorporate into my mindful breathing tool. 
+                        Both the <b>ACT Coach</b> and <b>ACT iCoach</b> were close competitors 
+                        in terms of <i>accessibility</i> and the <i>functionaility</i> 
+                        that I wanted to incorporate into my Values Compass tool. 
                     </p>
                     <p>
                         <ul>
-                            <li>&#128273;<b>Key Product Features:</b> Xhalr had a <u>pulse animation</u> while both Breathe and Xhalr had <u>adjustable breath lengths, 
-                            ,dynamic instructions and audio.</u></li>
+                            <li>&#128273;<b>Key Product Features:</b> ACT Coach implemented the <b>life domain selections</b> well in that that the user could choose <i>which</i>
+                            life domain they wanted to list vlaues and actions for. ACT iCoach lacked in the user flow as one had to go through each domain. However, 
+                            ACT iCoach had a <b>rating system</b> consisting of <b>sliders</b>, something that was missing from ACT Coach. 
                             <li>
-                                &#128309;<b>Interaction Improvements:</b> I wanted to improve and build upon Xhalr's pulse animation by
-                                allowing the user to <u>manipulate</u> it, like it was a malleable blob. 
+                                &#128309;<b>Interaction Improvements:</b> Rather than having a text of example values and large blocks of explanatory texts, I wanted 
+                                to utilise Vuetify's <b>chip component</b> with an array of predefined values that a user could choose from, as well as being able to 
+                                choose their own keyword.  
                             </li>
                         </ul>
                     </p>
@@ -395,7 +396,7 @@
         </v-row>
         <v-row class="justify-center my-10">
             <v-col cols="10" md="8">
-                 <h2 class="pb-10" >
+                    <h2 class="pb-10" >
                         Ideation and Wireframes
                     </h2>
             </v-col>
@@ -422,7 +423,7 @@
                     <v-img
                         contain
                         class="context-img"
-                        :src="require('~/assets/images/crazy_8_breath.png')"
+                        :src="require('~/assets/images/sketch_values1.png')"
                      />
             </v-col>
         </v-row>
@@ -431,24 +432,40 @@
                 align="center"
                 
             >
-            <v-col cols="12" md="4" class="px-10" 
+            <v-col cols="12" md="8" class="px-10" 
                 :class="{'px-0': $vuetify.breakpoint.lgAndUp}"
             >
                     <v-img
                         contain
                         class="context-img"
-                        :src="require('~/assets/images/Wireframe_V1.png')"
+                        :src="require('~/assets/images/wireframe.png')"
                      />
             </v-col>
-            <v-col cols="10" md="4"  
+        </v-row>
+        <v-row 
+                class="justify-center my-10"
+                align="center"
+                
+            >
+            <v-col cols="10" md="8"  
                 :class="{'pr-15': $vuetify.breakpoint.lgAndUp}"
                 
             >
                     <p>
-                        The first version of my wireframes were limited to the “Square Breath” 
-                        main application page, with Sub Pages that represented 2 control panels 
-                        (1 for the animation, 1 for the audio) and 2 informational pages where 
-                        users could learn more about the breathing technique and about its benefits.
+                        The user flow chart above gives a high level overview of the main flow and interactions wihtin the 
+                        Values Compass tool. 
+                    </p>
+                    <p>
+                        I used this flow chart to build out an initial design in Sketch. As this was a complex application and 
+                        required a lot of context for users, it was important that the design decisions aided this.
+                        The main design features I implemented were:
+                    </p>
+                    <p>
+                        <ol>
+                            <li>Tabs to navigate to different views</li>
+                            <li>Sliders for rating values</li>
+                            <li>Data Visualisations</li>
+                        </ol>
                     </p>
             </v-col>
         </v-row>
@@ -457,27 +474,23 @@
                 align="center"
                 
             >
-            <v-col cols="10" md="4"  
-                :class="{'pr-15': $vuetify.breakpoint.lgAndUp}"
-                
-            >
-                    <p>
-                        With the screens defined from the user flow chart above, I created a low fidelity prototype so that I could engage stakeholders early.
-                    </p>
-                    <p>
-                        I then presented these low fidelity Sketch prototypes to the project 
-                        stakeholders (The lead UX designer, Developer and group of product owners and project managers from the Departments of Psychology and Medicine in UCC).
-                    </p>
-            </v-col>
-
-            <v-col cols="12" md="4" class="px-10" 
-                :class="{'px-0': $vuetify.breakpoint.lgAndUp}"
+            <v-col cols="12" md="8" class="px-10 text-center" 
             >
                     <v-img
                         contain
-                        class="context-img"
-                        :src="require('~/assets/images/wire.png')"
+                        class="challenge-img"
+                        :src="require('~/assets/images/values midfidelity.png')"
                      />
+            </v-col>
+        </v-row>
+        <v-row class="justify-center my-10">
+            <v-col cols="10" md="8">
+                <p class="foot">
+                    <i>
+                        The designs above were made using an older design system. 
+                        The second iteration of designsfollow an updated design system, that is the reason for a visual difference.
+                    </i>
+                </p>
             </v-col>
         </v-row>
         <v-row class="px-15 mx-15" id="prototyping">
@@ -506,8 +519,7 @@
             >
                     <v-img
                         contain
-                        class="challenge-img"
-                        :src="require('~/assets/images/Wireframe_V2.png')"
+                        :src="require('~/assets/images/Values Mid.png')"
                      />
             </v-col>
         </v-row>
@@ -524,50 +536,13 @@
             </v-col>
         </v-row>
         <v-row class="justify-center my-10">
-            <v-col cols="10" md="8"
+            <v-col cols="10" md="6"
                 :class="{'px-0': $vuetify.breakpoint.mdAndUp}"
             >
                     <v-img
                         contain
                         class="challenge-img"
-                        :src="require('~/assets/images/Carousel.png')"
-                     />
-            </v-col>
-        </v-row>
-        <v-row 
-                class="justify-center my-10"
-                align="center"
-                
-            >
-            <v-col cols="10" md="4"  
-                :class="{'pr-15': $vuetify.breakpoint.lgAndUp}"
-            >
-                    <p>After going through the Value Propositions on the carousel, users were
-                        brought to a page that gave prerequesite instructions in order to prepare themselves
-                        for the breathing exercise. 
-                    </p>
-            </v-col>
-            <v-col cols="8" md="3" class="px-10" 
-                :class="{'px-0': $vuetify.breakpoint.lgAndUp}"
-            >
-                    <v-img
-                        contain
-                        class="context-img"
-                        :src="require('~/assets/images/Getting Started.png')"
-                     />
-            </v-col>
-        </v-row>
-        <v-row class="justify-center my-10">
-            <v-col cols="10" md="8"
-                :class="{'px-0': $vuetify.breakpoint.mdAndUp}"
-            ><p>Finally, after navigating to the main page of the application, users were presented with 
-                another carousel that walked them through each stage of the breath before letting
-                them practice on their own. 
-            </p>
-                    <v-img
-                        contain
-                        class="challenge-img"
-                        :src="require('~/assets/images/Onboarding_walkthrough.png')"
+                        :src="require('~/assets/images/values onboarding.png')"
                      />
             </v-col>
         </v-row>
@@ -585,7 +560,7 @@
                     Mindful Breath - Version 1
                 </h2>
                 
-                <a href="https://www.sketch.com/s/9e8ec0ab-02cc-4ade-9406-1a53d0227b96/a/GKRZbE/play" target="_blank">
+                <a href="https://www.sketch.com/s/9e8ec0ab-02cc-4ade-9406-1a53d0227b96/a/qg7aV3/play" target="_blank">
                     <v-btn
                         color="#665DF5"
                         class="white--text"
@@ -730,12 +705,12 @@
             </v-col>
         </v-row>
         <v-row class="justify-center" id="overview">
-            <v-col cols="10" md="6" class="text-center">
+            <v-col cols="10" md="8" class="text-center">
                 
                 <v-img
                 contain
                     class="text-center"
-                    :src="require('~/assets/images/Excel5.png')"
+                    :src="require('~/assets/images/excel values.png')"
                      />
             </v-col>
         </v-row>
@@ -768,9 +743,10 @@
             <v-col cols="10" md="4"  
                 :class="{'pr-15': $vuetify.breakpoint.lgAndUp}"
             >
-                <h2 class="py-5">1. Instructions</h2>
-                <p class="py-3">All 4 users wanted <b>live instructions</b> to show on screen while they did the breathing exercise, rather
-                    than the instructions in a carousel that could not be returned to later.
+                <h2 class="py-5">1. Remove Scores and Onboarding</h2>
+                <p class="py-3">
+                    All users were <b>confused by the onboarding</b> and found that it interrupted the user flow. 
+                    Additionally, the <b>score metric</b> on the dashboard was not positively recieved and left users confused. 
                 </p>
             </v-col>
             <v-col cols="8" md="3" class="px-10" 
@@ -779,7 +755,7 @@
                     <v-img
                         contain
                         class="context-img"
-                        :src="require('~/assets/images/Instruct_Quotes.png')"
+                        :src="require('~/assets/images/score.png')"
                      />
             </v-col>
         </v-row>
@@ -794,17 +770,15 @@
                     <v-img
                         contain
                         class="context-img"
-                        :src="require('~/assets/images/Quote2.png')"
+                        :src="require('~/assets/images/terms.png')"
                      />
             </v-col>
             <v-col cols="10" md="4"  
                 :class="{'pr-15': $vuetify.breakpoint.lgAndUp}"
             >
-                <h2 class="py-5">2. Context</h2>
+                <h2 class="py-5">2. Unclear Terminology</h2>
                 <p class="py-3">
-                    All 4 users were unaware of what <b>Square Breathing</b> actually was. 
-                        The only definition of it within the tool was a sub page that was only accessible
-                        after going through all of the onboarding.
+                    Users were not clear on exact definitions of the words <b>Keywords, Importance</b> and <b>Effectiveness</b> in the context of this tool. 
                 </p>
             </v-col>
         </v-row>
@@ -817,8 +791,8 @@
                 :class="{'pr-15': $vuetify.breakpoint.lgAndUp}"
             >
                 <h2 class="py-5">3. Information Overload</h2>
-                <p class="py-3">3 out of 4 users mentioned that the prototype was <b>too text-heavy.</b> 
-                        Users found this overwhelming due to the excess cognitive load.
+                <p class="py-3">As the Values Compass tool was quite complex in comparison to the Mindful Breathing tool, information overload became a
+                     problem for users as alot of context had to be consumed before the overall user flow made sense and was easy to remember.
                     </p>
             </v-col>
             <v-col cols="8" md="3" class="px-10" 
@@ -827,7 +801,7 @@
                     <v-img
                         contain
                         class="context-img"
-                        :src="require('~/assets/images/Text_Quotes.png')"
+                        :src="require('~/assets/images/info overload.png')"
                      />
             </v-col>
         </v-row>
@@ -849,9 +823,95 @@
                 <v-img
                         contain
                         class="context-img"
-                        :src="require('~/assets/images/sus_1.png')"
+                        :src="require('~/assets/images/values sus 1.png')"
                      />
                 <p>
+                    <mark class="promoter"> Promoter</mark> <mark class="passive"> Passive</mark> 
+                </p>
+            </v-col>
+            <v-col cols="8" md="4" class="text-center">
+                <p>Mean SUS Score:</p>
+                <h1 class="sus"><b>75</b></h1>
+            </v-col>
+        </v-row>
+        <v-row class="px-15 mx-15">
+            <v-divider></v-divider>
+        </v-row>
+        <v-row class="justify-center my-10">
+            <v-col cols="10" md="8">
+                <p>
+                    With these usability findings in mind, along with the qualitative and quantitative feedback,
+                    I was able to begin a second iteration of my designs that would undergo another round of stakeholder review before going
+                     to development. In the designs below, <b>Version 1</b> represents the inital iterations while <b>Version 2</b> represents the final designs.
+                </p>
+            </v-col>
+        </v-row>
+        <v-row class="justify-center" id="overview">
+            <v-col cols="10" md="8" class="text-center lo">
+                <v-img
+                    class="text-center"
+                    :src="require('~/assets/images/landing comparison.png')"
+                     />
+            </v-col>
+        </v-row>
+        <v-row class="justify-center" id="overview">
+            <v-col cols="10" md="8" class="text-center lo">
+                <v-img
+                    class="text-center"
+                    :src="require('~/assets/images/domain comparison.png')"
+                     />
+            </v-col>
+        </v-row>
+        <v-row class="justify-center" id="overview">
+            <v-col cols="10" md="8" class="text-center lo">
+                <v-img
+                    class="text-center"
+                    :src="require('~/assets/images/rating comparison.png')"
+                     />
+            </v-col>
+        </v-row>
+        <v-row class="justify-center" id="overview">
+            <v-col cols="10" md="8" class="text-center lo">
+                <v-img
+                    class="text-center"
+                    :src="require('~/assets/images/data comparison.png')"
+                     />
+            </v-col>
+        </v-row>
+        <v-row class="justify-center my-5" id="overview">
+            <v-col cols="10" md="8" class="text-center lo">
+                <p>Values Compass - All Screens (Final Version Design)</p>
+                <v-img
+                    class="text-center"
+                    :src="require('~/assets/images/Values Compass Screens.png')"
+                     />
+            </v-col>
+        </v-row>
+        <v-row class="px-15 mx-15">
+            <v-divider></v-divider>
+        </v-row>
+        <v-row class="justify-center my-10">
+            <v-col cols="10" md="8">
+                <p>
+                    The table below shows the individual SUS scores that each test participant gave to the
+                    final application during <b>workshop 2</b> (Workshop 2 was an unmoderated version of the first workshop, and had users going through the same script, but with a working application as opposed to a Sketch Prototype). The figures in the last column are the corresponding 
+                    percentile ranges that are defined by <a href="https://measuringu.com/interpret-sus-score/" target="_blank">Sauro (2011).</a> The Mean SUS score
+                     is the average of all 3* SUS scores. 
+                </p>
+                <p>
+                    <i>* Workshop 2 only had 3 users due to participant availability.</i>
+                </p>
+                
+            </v-col>
+        </v-row>
+        <v-row class="justify-center my-10 text-center">
+            <v-col cols="8" md="4" class="justify-center pb-5" >
+                <v-img
+                        contain
+                        class="context-img"
+                        :src="require('~/assets/images/values sus 2.png')"
+                     />
+                     <p>
                     <mark class="promoter"> Promoter</mark> <mark class="passive"> Passive</mark> 
                 </p>
             </v-col>
@@ -864,85 +924,17 @@
             <v-divider></v-divider>
         </v-row>
         <v-row class="justify-center my-10">
-            <v-col cols="10" md="8">
-                <p>
-                    With these usability findings in mind, along with the qualitative and quantitative feedback,
-                    I was able to begin a second iteration of my designs that would undergo another round of stakeholder review before going
-                     to development. In the designs below, <b>V1</b> represents the inital iterations while <b>V2</b> represents the final designs.
-                </p>
-            </v-col>
-        </v-row>
-        <v-row class="justify-center" id="overview">
-            <v-col cols="10" md="8" class="text-center lo">
-                <v-img
-                    class="text-center"
-                    :src="require('~/assets/images/Landing_comparison.png')"
-                     />
-            </v-col>
-        </v-row>
-        <v-row class="justify-center" id="overview">
-            <v-col cols="10" md="8" class="text-center lo">
-                <v-img
-                    class="text-center"
-                    :src="require('~/assets/images/Main pg comparison.png')"
-                     />
-            </v-col>
-        </v-row>
-        <v-row class="justify-center" id="overview">
-            <v-col cols="10" md="8" class="text-center lo">
-                <v-img
-                    class="text-center"
-                    :src="require('~/assets/images/Sub pg comparison.png')"
-                     />
-            </v-col>
-        </v-row>
-        <v-row class="px-15 mx-15">
-            <v-divider></v-divider>
-        </v-row>
-        <v-row class="justify-center my-10">
-            <v-col cols="10" md="8">
-                <p>
-                    The table below shows the individual SUS scores that each test participant gave to the
-                    final application during <b>workshop 2</b>. The figures in the last column are the corresponding 
-                    percentile ranges that are defined by <a href="https://measuringu.com/interpret-sus-score/" target="_blank">Sauro (2011).</a> The Mean SUS score
-                     is the average of all 3* SUS scores. 
-                </p>
-                <p>
-                    <i>* Workshop 2 only had 3 users due to participant availability.</i>
-                </p>
-            </v-col>
-        </v-row>
-        <v-row class="justify-center my-10 text-center">
-            <v-col cols="8" md="4" class="justify-center pb-5" >
-                <v-img
-                        contain
-                        class="context-img"
-                        :src="require('~/assets/images/sus_2.png')"
-                     />
-                <p>
-                    <mark class="promoter"> Promoter</mark> <mark class="passive"> Passive</mark> 
-                </p>
-            </v-col>
-            <v-col cols="8" md="4" class="text-center">
-                <p>Mean SUS Score:</p>
-                <h1 class="sus"><b>86</b></h1>
-            </v-col>
-        </v-row>
-        <v-row class="px-15 mx-15">
-            <v-divider></v-divider>
-        </v-row>
-        <v-row class="justify-center my-10">
             <v-col class="text-center">
-                <h2 class="MidFi">Final Production Version</h2>
+                <h2 class="MidFi">Finished Application</h2>
             </v-col>
         </v-row>
         <v-row class="justify-center my-10" id="application">
             <v-col cols="10" md="10" class="text-center my-5">
                 <h2 class="pb-10">
-                    Mindful Breath Tool
+                    Values Compass Tool
                 </h2>
                 
-                <a href="https://olearyb.gitlab.io/myuse-starter-barra/" target="_blank">
+                <a href="https://olearyb.gitlab.io/myuse-starter-barra/values/" target="_blank">
                     <v-btn
                         color="#665DF5"
                         class="white--text"
@@ -966,7 +958,7 @@
             <v-col cols="4" class="text-right">
                 <nuxt-link to="/dev_breath">
                     <p class="nav_bot"><b>Next</b></p>
-                    <h2>Developing the Mindful Breath Tool</h2>
+                    <h2>Developing the Values Compass Tool</h2>
                 </nuxt-link>
             </v-col>
         </v-row>
@@ -976,6 +968,10 @@
 <style>
 .drawer {
     max-width: 220px;
+}
+
+.foot {
+    font-size: 0.85rem;
 }
 
 .differ {
@@ -1003,6 +999,16 @@
 .papers {
     background-color: #F9F9F9;
     display: flex;
+}
+
+.promoter {
+    color: #34a853;
+    background-color: #d9ead3;
+}
+
+.passive {
+    color: #bf9000;
+    background-color: #ffe599;
 }
 
 .obj {
@@ -1039,16 +1045,6 @@ mark {
     color: #665DF5 !important;
 }
 
-.promoter {
-    color: #34a853;
-    background-color: #d9ead3;
-}
-
-.passive {
-    color: #bf9000;
-    background-color: #ffe599;
-}
-
 .my-nav a:hover {
     text-decoration: none;
     color: #665DF5 !important;
@@ -1065,11 +1061,6 @@ mark {
 
 .highlight {
     background-color: #F9F9F9
-}
-
-.javascript {
-    background-color: #011627 !important;
-    color: white !important;
 }
 
 

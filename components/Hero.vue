@@ -3,7 +3,7 @@
       <h1 class=" mb-4">Hello!</h1>
       <v-row align="center" justify="center" class="px-10">
         <vue-typed-js 
-        :strings="['Im Barra, <b><span>UX Designer</span></b> and <b><span>Researcher</span></b>']" 
+        :strings="['Im Barra, <b><span>UX Researcher</span></b> and <b><span>Designer</span></b>']" 
         :showCursor="false" 
         :typeSpeed="50">
           <p class="typing line1"></p>

@@ -24,7 +24,7 @@
                 </nuxt-link>
             </v-col>
             <v-col cols="10" md="4" >
-                <nuxt-link to="/design_breath">
+                <nuxt-link to="/design_values_v1">
                     <v-card>
                         <v-card-text>
                             <h2 class="pa-10 text-center justify-center">Values Compass &#x1F9ED;</h2>
@@ -36,11 +36,11 @@
                 </nuxt-link>
             </v-col>
         </v-row>
-        <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#665DF5" fill-opacity="0.25" d="M0,256L1440,32L1440,320L0,320Z"></path>
-</svg>
-    </div>
+        <!--<div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#665DF5" fill-opacity="0.25" d="M0,256L1440,32L1440,320L0,320Z"></path>
+            </svg>
+        </div>-->
         <v-row></v-row>
     </v-container>
 </template>
