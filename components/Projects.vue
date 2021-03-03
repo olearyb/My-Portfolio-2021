@@ -22,7 +22,7 @@
                     cols="12" sm="4" 
                     class="pr-15"
                 >
-                    <h2 class="py-5">2. Design &#9997;</h2>
+                    <h2 class="py-5">2. Design &#127912;</h2>
                     <p class="py-3">I favour an iterative and User-Centred Design approach to Product Design. I believe in validating design often with users and stakeholders.</p>
                 </v-col>
                 <v-col cols="12" sm="4"
@@ -40,24 +40,30 @@
                     <h2>Case Studies</h2>
                 </v-col>
             </v-row>
-            <nuxt-link to="/design">
+            
             <v-row 
-                class="my-15 px-15 justify-center cases"
+                class="my-15 px-15 justify-center"
                 :class="{'ma-15': $vuetify.breakpoint.mdAndUp}"
                 >
+                
                 <v-col cols="12" md="5">
+                    <nuxt-link to="/design">
                     <v-img
                         class="text-center img-round"
                         :src="require('~/assets/images/LowFi.png')"
                      />
+                     </nuxt-link>
                 </v-col>
+                
                 <v-col cols="12" md="5 cases">
+                    <nuxt-link to="/design">
                     <h2 class="mb-5 under">
                         Designing interactive skill-building tools to support student wellbeing
                     </h2>
                     <p class="sub under">
                         I collaborated with the MyUse team of University College Cork to design a set of web tools aimed at supporting student health and wellbeing.
                     </p>
+                    </nuxt-link>
                     <div class="py-2"
                     >
                             <v-chip outlined  class="ma-1 chip">
@@ -78,7 +84,7 @@
                         </div>
                 </v-col>
             </v-row>
-            </nuxt-link>
+            
             <nuxt-link to="/dev_breath">
             <v-row 
                 class="my-15 px-15  justify-center"
@@ -454,6 +460,10 @@ a {
     width: 100%;
     height: auto;
     opacity: 0.5;
+}
+
+.svg:hover {
+    opacity: 1;
 }
 
 .social {

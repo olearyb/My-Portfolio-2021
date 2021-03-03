@@ -744,10 +744,8 @@
                 <p>
                     At the end of each session, participants were given a link to 2 google form surveys that I created and asked to fill them out while on the call:
                     <ul>
-                        <nuxt-link to="/Barra Resume.pdf">
-                            <li>- System Usability Scale </li>
-                        </nuxt-link>
-                        <li>- Net Promoter Score</li>
+                        <li>- <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html" target="_blank">System Usability Scale</a></li>
+                        <li>- <a href="https://www.hotjar.com/net-promoter-score/" target="_blank">Net Promoter Score</a></li>
                     </ul> 
                 </p>
             </v-col>
@@ -860,6 +858,20 @@
                 <h1 class="sus"><b>77.5</b></h1>
             </v-col>
         </v-row>
+        <v-row class="justify-center my-10 text-center">
+            <v-col cols="8" md="4" class="justify-center pb-5" >
+                <v-img
+                        contain
+                        class="context-img"
+                        :src="require('~/assets/images/NPS breath 1.png')"
+                     />
+                
+            </v-col>
+            <v-col cols="8" md="4" class="text-center">
+                <p>NPS rating:</p>
+                <h1 class="sus"><b>-25</b></h1>
+            </v-col>
+        </v-row>
         <v-row class="px-15 mx-15">
             <v-divider></v-divider>
         </v-row>
@@ -926,6 +938,20 @@
             <v-col cols="8" md="4" class="text-center">
                 <p>Mean SUS Score:</p>
                 <h1 class="sus"><b>86</b></h1>
+            </v-col>
+        </v-row>
+        <v-row class="justify-center my-10 text-center">
+            <v-col cols="8" md="4" class="justify-center pb-5" >
+                <v-img
+                        contain
+                        class="context-img"
+                        :src="require('~/assets/images/NPS values 2.png')"
+                     />
+                
+            </v-col>
+            <v-col cols="8" md="4" class="text-center">
+                <p>NPS rating:</p>
+                <h1 class="sus"><b>66</b></h1>
             </v-col>
         </v-row>
         <v-row class="px-15 mx-15">

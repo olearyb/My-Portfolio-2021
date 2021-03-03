@@ -24,7 +24,7 @@
                 </nuxt-link>
             </v-col>
             <v-col cols="10" md="4" >
-                <nuxt-link to="/design_values_v1">
+                <nuxt-link to="/design_values">
                     <v-card>
                         <v-card-text>
                             <h2 class="pa-10 text-center justify-center">Values Compass &#x1F9ED;</h2>

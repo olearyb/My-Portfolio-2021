@@ -499,16 +499,15 @@
         <v-row class="justify-center my-10">
             <v-col cols="10" md="8">
                 <h2 class="pb-10">From Wireframes to Prototypes</h2>
-                <p> As the overall MyUse app was primarily aimed at students aged 18-25, 
-                    the majority of the users would likely not be aware of mindulness, or mindful 
-                    breathing.  Therefore, it was important to provide an introduction in some way. 
+                <p>
+                    Before diving into mid-fidelity prototypes, it was important to get stakeholder feedback on my wireframes in order to 
+                    make sure the user flow had the intention that the MyUse project team had in mind. 
                 </p>
                 <div class="highlight pa-3">
                     <p>
                         &#128483;
-                        One of the primary pieces of stakeholder feedback that I receveived was 
-                        the need for <b>User Onboarding</b> in order to give context and an introduction to the 
-                        tool.
+                        The user flow of the Values Compass exercise involved much more collaboration with stakeholders
+                        due to its complexity as well as its overall goals from a psychological standpoint as an ACT tool. 
                     </p>
                 </div>
             </v-col>
@@ -526,7 +525,13 @@
         <v-row class="justify-center my-10">
             <v-col cols="10" md="8">
                 <p class="pubs">
-                    I opted for a <b>Top User Benefits</b> <a href="https://material.io/design/communication/onboarding.html#top-user-benefits-model" target="_blank">carousel</a> that would highlight the main benefits of using the tool, giving users a set of value propositions to make the benefits of this practice clear to them. 
+                    As the Values Compass tool was multi-faceted and much more complex than the simpler Mindful Breathing tool, 
+                    I initally employed an instructional onboarding as soon as users had gone through the value propositions. This 
+                    onboarding utilised a progress-tracker approach so as to give users an expectation of where they were in the process. 
+                </p>
+                <p>
+                    The intention was for this type of onboarding to guide users in performing their first value rating exercise so 
+                    that they knew how to complete the exercise for the remaining life domains. 
                 </p>
             </v-col>
         </v-row>
@@ -719,10 +724,8 @@
                 <p>
                     At the end of each session, participants were given a link to 2 google form surveys that I created and asked to fill them out while on the call:
                     <ul>
-                        <nuxt-link to="/Barra Resume.pdf">
-                            <li>- System Usability Scale </li>
-                        </nuxt-link>
-                        <li>- Net Promoter Score</li>
+                        <li>- <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html" target="_blank">System Usability Scale</a></li>
+                        <li>- <a href="https://www.hotjar.com/net-promoter-score/" target="_blank">Net Promoter Score</a></li>
                     </ul> 
                 </p>
             </v-col>
@@ -834,6 +837,20 @@
                 <h1 class="sus"><b>75</b></h1>
             </v-col>
         </v-row>
+        <v-row class="justify-center my-10 text-center">
+            <v-col cols="8" md="4" class="justify-center pb-5" >
+                <v-img
+                        contain
+                        class="context-img"
+                        :src="require('~/assets/images/NPS values 1.png')"
+                     />
+                
+            </v-col>
+            <v-col cols="8" md="4" class="text-center">
+                <p>NPS rating:</p>
+                <h1 class="sus"><b>0</b></h1>
+            </v-col>
+        </v-row>
         <v-row class="px-15 mx-15">
             <v-divider></v-divider>
         </v-row>
@@ -910,14 +927,28 @@
                         contain
                         class="context-img"
                         :src="require('~/assets/images/values sus 2.png')"
-                     />
-                     <p>
+                 />
+                <p>
                     <mark class="promoter"> Promoter</mark> <mark class="passive"> Passive</mark> 
                 </p>
             </v-col>
             <v-col cols="8" md="4" class="text-center">
                 <p>Mean SUS Score:</p>
                 <h1 class="sus"><b>77.5</b></h1>
+            </v-col>
+        </v-row>
+        <v-row class="justify-center my-10 text-center">
+            <v-col cols="8" md="4" class="justify-center pb-5" >
+                <v-img
+                        contain
+                        class="context-img"
+                        :src="require('~/assets/images/NPS values 2.png')"
+                     />
+                
+            </v-col>
+            <v-col cols="8" md="4" class="text-center">
+                <p>NPS rating:</p>
+                <h1 class="sus"><b>-33</b></h1>
             </v-col>
         </v-row>
         <v-row class="px-15 mx-15">
@@ -956,7 +987,7 @@
                 </nuxt-link>
             </v-col>
             <v-col cols="4" class="text-right">
-                <nuxt-link to="/dev_breath">
+                <nuxt-link to="/dev_values">
                     <p class="nav_bot"><b>Next</b></p>
                     <h2>Developing the Values Compass Tool</h2>
                 </nuxt-link>

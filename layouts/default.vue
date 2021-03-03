@@ -7,7 +7,7 @@
       app
     >
     <nuxt-link to="/">
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title v-text="title" class="logo" />
     </nuxt-link>
       
       <v-spacer />
@@ -72,7 +72,7 @@
       hide-overlay
     >
     <v-card>
-      <v-toolbar>
+      <v-toolbar flat>
         <v-spacer></v-spacer>
         <v-btn
           icon
@@ -84,6 +84,56 @@
           </v-icon>
         </v-btn>
       </v-toolbar>
+      <v-card-text>
+        <v-list >
+          <v-list-item>
+            <v-btn
+              class="mx-5"
+              depressed
+              plain
+              :ripple="false"
+              v-if="$vuetify.breakpoint.mdAndDown && this.$route.path != '/'"
+              @click="caseStudyAway()"
+              
+            >
+            Case Studies
+            </v-btn>
+            <v-btn
+              class="mx-5"
+              depressed
+              plain
+              :ripple="false"
+              v-if="$vuetify.breakpoint.mdAndDown && this.$route.path == '/'"
+              @click="caseStudyHome()"
+            >
+            Case Studies
+            </v-btn>
+          </v-list-item>
+          <v-list-item>
+            <v-btn
+              class="mx-5"
+              depressed
+              plain
+              :ripple="false"
+              v-if="$vuetify.breakpoint.mdAndDown && this.$route.path != '/'"
+              @click="aboutAway()"
+              
+            >
+            About
+            </v-btn>
+            <v-btn
+              class="mx-5"
+              depressed
+              plain
+              :ripple="false"
+              v-if="$vuetify.breakpoint.mdAndDown && this.$route.path == '/'"
+              @click="aboutHome()"
+            >
+            About
+            </v-btn>
+          </v-list-item>
+        </v-list>
+      </v-card-text>
     </v-card>
     </v-dialog>
     <v-footer
@@ -123,6 +173,24 @@ export default {
       rightDrawer: false,
       title: "Barra O'Leary"
     }
+  },
+  methods: {
+    caseStudyHome() {
+      this.rightDrawer = false
+      this.$vuetify.goTo('#design')
+    },
+    caseStudyAway() {
+      this.rightDrawer = false
+      this.$router.push('/#design')
+    },
+    aboutHome() {
+      this.rightDrawer = false
+      this.$vuetify.goTo('#research')
+    },
+    aboutAway() {
+      this.rightDrawer = false
+      this.$router.push('/#research')
+    }
   }
 }
 </script>
@@ -152,5 +220,9 @@ html, body {
 
 .nuxt-link {
     color: #000;
+}
+
+.logo {
+  color: #000 !important;
 }
 </style>
