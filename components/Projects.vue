@@ -101,7 +101,7 @@
                             Developing the Mindful Breath tool
                         </h2>
                         <p class="sub">
-                            This case study goes into more details about how I implemented the usability findings from the deisign stage.
+                            This case study goes into more detail about how I implemented the usability findings from the design stage.
                              This case study details the implementation and how I used front end technology to create the Mindful Breath exercise. 
                         </p>
                         <div class="py-2"
@@ -142,7 +142,7 @@
                         Developing the Values Compass tool
                     </h2>
                     <p class="sub">
-                            This case study goes into more details about how I implemented the usability findings from the deisign stage.
+                            This case study goes into more detail about how I implemented the usability findings from the design stage.
                              This case study details the implementation and how I used front end technology to create the Values Compass tool. 
                     </p>
                     <div class="py-2"

@@ -170,8 +170,7 @@
             <v-col cols="10" md="5">
                 <p>
                     This is achieved by creating a folder and a vue file within it that was prefixed by an underscore. Keeping the name of the underscored 
-                    vue file the same as the folder name allowed for nested routing. This was necessary to achieve the workflow in Figure 4.12 
-                    programmatically for the user.
+                    vue file the same as the folder name allowed for nested routing. This was necessary to achieve the workflow programmatically for the user.
                 </p>
             </v-col>
             <v-col cols="10" md="3">
