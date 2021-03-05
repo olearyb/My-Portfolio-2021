@@ -342,7 +342,7 @@
                         HTML, CSS
                     </p>
                     <p>
-                        Adobe Suite (PS, Illustrator)
+                        Adobe Suite (Ps, Ai, Id)
                     </p>
                     <p>
                         JIRA, Confluence
