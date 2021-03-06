@@ -50,7 +50,8 @@
                     <nuxt-link to="/design">
                     <v-img
                         class="text-center img-round"
-                        :src="require('~/assets/images/LowFi.png')"
+                        :src="LowFi" alt="Whitebard stock img"
+                     
                      />
                      </nuxt-link>
                 </v-col>
@@ -93,7 +94,8 @@
                     <v-col cols="12" md="5">
                         <v-img
                             class="text-center img-round"
-                            :src="require('~/assets/images/MB_thumb.png')"
+                            :src="MB_thumb"
+                            alt="Mobile mockups"
                         />
                     </v-col>
                     <v-col cols="12" md="5">
@@ -134,7 +136,8 @@
                 <v-col cols="12" md="5">
                     <v-img
                         class="text-center img-round"
-                        :src="require('~/assets/images/VC_thumb.png')"
+                        :src="values"
+                        alt="values laptop mockup"
                      />
                 </v-col>
                 <v-col cols="12" md="5">
@@ -298,31 +301,31 @@
                     <li class="clients_item">
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/huawei.svg')"
+                        :src="require('~/static/clients/huawei.svg')"
                      />
                     </li>
                     <li>
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/Philips.svg')"
+                        :src="require('~/static/clients/Philips.svg')"
                      />
                     </li>
                     <li>
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/F1.svg')"
+                        :src="require('~/static/clients/F1.svg')"
                      />
                     </li>
                     <li>
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/DAZN.svg')"
+                        :src="require('~/static/clients/DAZN.svg')"
                      />
                     </li>
                     <li>
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/TV2.svg')"
+                        :src="require('~/static/clients/TV2.svg')"
                      />
                     </li>
                 </ul>
@@ -380,7 +383,7 @@
                         <a href="https://www.linkedin.com/in/barraoleary/" target="_blank">
                             <v-img
                             class="text-center social "
-                            :src="require('~/assets/images/social/linkedin.svg')"
+                            :src="require('~/static/social/linkedin.svg')"
                             />
                         </a>
                     </li>
@@ -388,7 +391,7 @@
                         <a href="https://www.behance.net/barraoleary" target="_blank">
                             <v-img
                             class="text-center social"
-                            :src="require('~/assets/images/social/behance.svg')"
+                            :src="require('~/static/social/behance.svg')"
                             />
                      </a>
                     </li>
@@ -396,7 +399,7 @@
                         <a href="https://github.com/olearyb?tab=repositories" target="_blank">
                             <v-img
                             class="text-center social "
-                            :src="require('~/assets/images/social/github.svg')"
+                            :src="require('~/static/social/github.svg')"
                             />
                      </a>
                     </li>
@@ -583,6 +586,21 @@ li {
 
 <script>
 export default {
-    name: 'Projects'
+    name: 'Projects',
+    data() {
+        return {
+            LowFi: this.$cloudinary.image.url('LowFi'),
+            MB_thumb: this.$cloudinary.image.url('MB_thumb'),
+            values: this.$cloudinary.image.url('VC_thumb_psyfxe'),
+            huawei: this.$cloudinary.image.url('huawei_xdzcxr'),
+            philips: this.$cloudinary.image.url('Philips_sxcgnj'),
+            f1: this.$cloudinary.image.url('F1_en9o1u'),
+            dazn: this.$cloudinary.image.url('DAZN_wwol0o'),
+            tv2: this.$cloudinary.image.url('TV2_mt9pqf'),
+            lk: this.$cloudinary.image.url('linkedin_mljktd'),
+            github: this.$cloudinary.image.url('github_j5yi0m'),
+            behance: this.$cloudinary.image.url('behance_bvuftk')
+        }
+    }
 }
 </script>

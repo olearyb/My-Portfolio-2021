@@ -45,7 +45,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-
+    '@nuxtjs/cloudinary',
     // nuxt highlight
     ['nuxt-highlightjs', {
       style: 'night-owl'
@@ -97,5 +97,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  cloudinary: {
+    // Cloudinary configuration options
+    cloudName: 'olearyb',
+    apiKey: process.env.API_KEY, //only needed if you are using server-side upload
+    apiSecret: process.env.API_SECRET, //only needed if you are using server-side upload
+    useComponent: true,
   }
 }

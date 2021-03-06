@@ -115,7 +115,7 @@
             <v-col cols="10" md="6" class="text-center lo">
                 <v-img
                     class="text-center"
-                    :src="require('~/assets/images/main_img_breath.png')"
+                    :src="main_img_breath"
                      />
             </v-col>
         </v-row>
@@ -998,6 +998,24 @@
         </v-row>
     </v-container>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            main_img_breath: this.$cloudinary.image.url(
+          'main_img_breath',
+          {
+            //gravity: 'auto:subject',
+            //width: '200',
+            //height: 200,
+            //crop: 'fill',
+          }
+        )
+        }
+    }
+}
+</script>
 
 <style>
 .drawer {
