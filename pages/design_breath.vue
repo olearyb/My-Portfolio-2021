@@ -114,6 +114,7 @@
         <v-row class="justify-center" id="overview">
             <v-col cols="10" md="6" class="text-center lo">
                 <v-img
+                    eager
                     class="text-center"
                     :src="main_img_breath"
                      />
@@ -183,6 +184,7 @@
                 :class="{'px-0': $vuetify.breakpoint.lgAndUp}"
             >
                     <v-img
+                        eager
                         contain
                         class="context-img"
                         :src="require('~/assets/images/Context_Flow.png')"
@@ -218,6 +220,7 @@
             </v-col>
             <v-col cols="8" md="4">
                 <v-img
+                        eager
                         class="challenge-img"
                         :src="require('~/assets/images/Responsive.png')"
                 />
@@ -231,6 +234,7 @@
         <v-row class="justify-center my-10 py-10" align="center">
             <v-col cols="8" md="4">
                 <v-img
+                        eager
                         class="challenge-img"
                         :src="require('~/assets/images/IDP.png')"
                 />
@@ -296,6 +300,7 @@
                 :class="{'px-0': $vuetify.breakpoint.mdAndUp}"
             >
                     <v-img
+                        eager
                         contain
                         class="challenge-img"
                         :src="require('~/assets/images/Brief.png')"
@@ -326,6 +331,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/lungs.png')"
                      />
@@ -362,6 +368,7 @@
             >
                     <v-img
                         class="challenge-img"
+                        eager
                         :src="require('~/assets/images/Competitors.png')"
                      />
             </v-col>
@@ -421,6 +428,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/crazy_8_breath.png')"
                      />
@@ -436,6 +444,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/Wireframe_V1.png')"
                      />
@@ -475,6 +484,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/wire.png')"
                      />
@@ -506,6 +516,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="challenge-img"
                         :src="require('~/assets/images/Wireframe_V2.png')"
                      />
@@ -529,6 +540,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="challenge-img"
                         :src="require('~/assets/images/Carousel.png')"
                      />
@@ -552,6 +564,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/Getting Started.png')"
                      />
@@ -564,8 +577,15 @@
                 another carousel that walked them through each stage of the breath before letting
                 them practice on their own. 
             </p>
+            </v-col>
+        </v-row>
+        <v-row class="justify-center my-10">
+            <v-col cols="10" md="6"
+                :class="{'px-0': $vuetify.breakpoint.mdAndUp}"
+            >
                     <v-img
                         contain
+                        eager
                         class="challenge-img"
                         :src="require('~/assets/images/Onboarding_walkthrough.png')"
                      />
@@ -624,6 +644,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/Sessions.png')"
                      />
@@ -660,6 +681,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/Miro1.png')"
                      />
@@ -733,7 +755,8 @@
             <v-col cols="10" md="6" class="text-center">
                 
                 <v-img
-                contain
+                    contain
+                    eager
                     class="text-center"
                     :src="require('~/assets/images/Excel5.png')"
                      />
@@ -775,6 +798,7 @@
                 :class="{'px-0': $vuetify.breakpoint.lgAndUp}"
             >
                     <v-img
+                        eager
                         contain
                         class="context-img"
                         :src="require('~/assets/images/Instruct_Quotes.png')"
@@ -791,6 +815,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/Quote2.png')"
                      />
@@ -824,6 +849,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/Text_Quotes.png')"
                      />
@@ -846,6 +872,7 @@
             <v-col cols="8" md="4" class="justify-center pb-5" >
                 <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/sus_1.png')"
                      />
@@ -862,6 +889,7 @@
             <v-col cols="8" md="4" class="justify-center pb-5" >
                 <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/NPS breath 1.png')"
                      />
@@ -888,6 +916,7 @@
             <v-col cols="10" md="8" class="text-center lo">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/Landing_comparison.png')"
                      />
             </v-col>
@@ -896,6 +925,7 @@
             <v-col cols="10" md="8" class="text-center lo">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/Main pg comparison.png')"
                      />
             </v-col>
@@ -904,6 +934,7 @@
             <v-col cols="10" md="8" class="text-center lo">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/Sub pg comparison.png')"
                      />
             </v-col>
@@ -928,6 +959,7 @@
             <v-col cols="8" md="4" class="justify-center pb-5" >
                 <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/sus_2.png')"
                      />
@@ -944,6 +976,7 @@
             <v-col cols="8" md="4" class="justify-center pb-5" >
                 <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/NPS values 2.png')"
                      />

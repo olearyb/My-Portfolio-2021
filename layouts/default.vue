@@ -143,7 +143,7 @@
     <v-col
       class="text-center"
     >
-      <span>Designed & built by Barra O'Leary &copy; {{ new Date().getFullYear() }}</span>
+      <span>Website designed and built by me using NuxtJS and Vuetify. Deployed to Netlify. See the repo on Github.</span>
     </v-col>
     </v-footer>
   </v-app>

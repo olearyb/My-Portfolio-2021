@@ -49,6 +49,7 @@
                 <v-col cols="12" md="5">
                     <nuxt-link to="/design">
                     <v-img
+                        eager
                         class="text-center img-round"
                         :src="LowFi" alt="Whitebard stock img"
                      
@@ -93,6 +94,7 @@
             >
                     <v-col cols="12" md="5">
                         <v-img
+                        eager
                             class="text-center img-round"
                             :src="MB_thumb"
                             alt="Mobile mockups"
@@ -135,6 +137,7 @@
             >
                 <v-col cols="12" md="5">
                     <v-img
+                        eager
                         class="text-center img-round"
                         :src="values"
                         alt="values laptop mockup"
