@@ -396,7 +396,7 @@
                         <a href="https://github.com/olearyb?tab=repositories" target="_blank">
                             <v-img
                             class="text-center social "
-                            :src="require('~/assets/images/social/github.svg')"
+                            src="~/assets/images/social/github.svg"
                             />
                      </a>
                     </li>
