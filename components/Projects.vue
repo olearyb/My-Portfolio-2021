@@ -298,31 +298,31 @@
                     <li class="clients_item">
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/huawei.svg')"
+                        src="~/assets/images/clients/huawei.svg"
                      />
                     </li>
                     <li>
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/Philips.svg')"
+                        src="~/assets/images/clients/Philips.svg"
                      />
                     </li>
                     <li>
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/F1.svg')"
+                        src="~/assets/images/clients/F1.svg"
                      />
                     </li>
                     <li>
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/DAZN.svg')"
+                        src="~/assets/images/clients/DAZN.svg"
                      />
                     </li>
                     <li>
                         <v-img
                         class="text-center svg"
-                        :src="require('~/assets/images/clients/TV2.svg')"
+                        src="~/assets/images/clients/TV2.svg"
                      />
                     </li>
                 </ul>
@@ -380,7 +380,7 @@
                         <a href="https://www.linkedin.com/in/barraoleary/" target="_blank">
                             <v-img
                             class="text-center social "
-                            :src="require('~/assets/images/social/linkedin.svg')"
+                            src="~/assets/images/social/linkedin.svg"
                             />
                         </a>
                     </li>
@@ -388,7 +388,7 @@
                         <a href="https://www.behance.net/barraoleary" target="_blank">
                             <v-img
                             class="text-center social"
-                            :src="require('~/assets/images/social/behance.svg')"
+                            src="~/assets/images/social/behance.svg"
                             />
                      </a>
                     </li>
