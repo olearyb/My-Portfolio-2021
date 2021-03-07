@@ -108,5 +108,5 @@ export default {
   },
   plausible: {
     domain: 'barraoleary.com'
-  }
+  },
 }
