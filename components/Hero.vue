@@ -11,7 +11,7 @@
       </v-row>
       <v-row align="center" justify="center" class="mt-5 px-10">
         <vue-typed-js 
-        :strings="['I also dabble in <b><span>Front End development</span></b>']" 
+        :strings="['I also dabble in <b><span>Front End Development</span></b>']" 
         :showCursor="false"
         :startDelay="3000"
         :typeSpeed="50">

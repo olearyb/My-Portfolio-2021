@@ -46,6 +46,7 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/cloudinary',
+    'vue-plausible'
     // nuxt highlight
     ['nuxt-highlightjs', {
       style: 'night-owl'
@@ -104,5 +105,8 @@ export default {
     apiKey: process.env.API_KEY, //only needed if you are using server-side upload
     apiSecret: process.env.API_SECRET, //only needed if you are using server-side upload
     useComponent: true,
+  },
+  plausible: {
+    domain: 'barraoleary.com'
   }
 }
