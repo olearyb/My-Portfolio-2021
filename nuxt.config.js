@@ -107,6 +107,6 @@ export default {
     useComponent: true,
   },
   plausible: {
-    domain: 'barraoleary.com'
+    domain: 'barraoleary.com',
   },
 }
