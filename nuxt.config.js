@@ -46,7 +46,7 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/cloudinary',
-    'vue-plausible'
+    'vue-plausible',
     // nuxt highlight
     ['nuxt-highlightjs', {
       style: 'night-owl'
@@ -108,5 +108,5 @@ export default {
   },
   plausible: {
     domain: 'barraoleary.com',
-  },
+  }
 }
