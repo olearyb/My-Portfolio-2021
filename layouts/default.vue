@@ -143,8 +143,8 @@
     <v-col
       class="text-center"
     >
-      Website designed and built by me using <a href="https://nuxtjs.org/" target="_blank"><span>NuxtJS</span></a> and
-      <a href="https://vuetifyjs.com/en/" target="_blank"><span>Vuetify</span></a>. Deployed to <a href="https://www.netlify.com/" target="_blank"><span>Netlify</span>.</a> See the repo on <a href="https://github.com/olearyb/My-Portfolio-2021" target="_blank"><span>Github.</span></a>
+      Website designed and built by me using <b><a href="https://nuxtjs.org/" target="_blank"><span>NuxtJS</span></a></b> and
+      <b><a href="https://vuetifyjs.com/en/" target="_blank"><span>Vuetify</span></a></b>. Deployed to <b><a href="https://www.netlify.com/" target="_blank"><span>Netlify</span>.</a></b> See the repo on <b><a href="https://github.com/olearyb/My-Portfolio-2021" target="_blank"><span>Github.</span></a></b>
     </v-col>
     </v-footer>
   </v-app>

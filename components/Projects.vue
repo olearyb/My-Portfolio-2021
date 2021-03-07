@@ -369,7 +369,7 @@
                         Workshop facilitation
                     </p>
                     <p>
-                        Design Sprints
+                        Front End Development
                     </p>
                 </v-col>
             </v-row>
