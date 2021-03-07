@@ -81,6 +81,7 @@
             <v-col cols="10" md="6" class="text-center lo">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/main dev breath.png')"
                      />
             </v-col>
@@ -127,6 +128,7 @@
             <v-col cols="10" md="6">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/stack.png')"
                      />
             </v-col>
@@ -177,6 +179,7 @@
             <v-col cols="10" md="6">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/wave.png')"
                      />
             </v-col>
@@ -241,6 +244,7 @@ mounted () {
                 <v-img
                     class="text-center"
                     contain
+                    eager
                     :src="require('~/assets/images/lifecycleblob.png')"
                      />
             </v-col>
@@ -450,6 +454,7 @@ countDownTimer() {
                 <v-img
                     class="text-center"
                     contain
+                    eager
                     :src="require('~/assets/images/Color Setting.png')"
                      />
             </v-col>
@@ -479,6 +484,7 @@ countDownTimer() {
             <v-col cols="10" md="6">
                 <v-img
                     class="text-center"
+                    eager
                     contain
                     :src="require('~/assets/images/musicDesktop.png')"
                      />

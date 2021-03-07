@@ -115,6 +115,7 @@
             <v-col cols="10" md="6" class="text-center lo">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/main_img_values.png')"
                      />
             </v-col>
@@ -185,6 +186,7 @@
                     <v-img
                         contain
                         class="context-img"
+                        eager
                         :src="require('~/assets/images/Context_Flow.png')"
                      />
             </v-col>
@@ -219,6 +221,7 @@
             <v-col cols="8" md="4">
                 <v-img
                         class="challenge-img"
+                        eager
                         :src="require('~/assets/images/Responsive.png')"
                 />
             </v-col>
@@ -232,6 +235,7 @@
             <v-col cols="8" md="4">
                 <v-img
                         class="challenge-img"
+                        eager
                         :src="require('~/assets/images/IDP.png')"
                 />
             </v-col>
@@ -299,6 +303,7 @@
                     <v-img
                         contain
                         class="challenge-img"
+                        eager
                         :src="require('~/assets/images/values_brief.png')"
                      />
             </v-col>
@@ -334,6 +339,7 @@
                 <v-img
                         class="challenge-img"
                         contain
+                        eager
                         :src="require('~/assets/images/ACT Coach.png')"
                  />
             </v-col>
@@ -352,6 +358,7 @@
                 <v-img
                         class="challenge-img"
                         contain
+                        eager
                         :src="require('~/assets/images/ACT iCoach.png')"
                      />
             </v-col>
@@ -361,6 +368,7 @@
                 <v-img
                         class="challenge-img"
                         contain
+                        eager
                         :src="require('~/assets/images/values_competitors.png')"
                      />
             </v-col>
@@ -437,6 +445,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/wireframe.png')"
                      />
@@ -478,6 +487,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="challenge-img"
                         :src="require('~/assets/images/values midfidelity.png')"
                      />
@@ -518,6 +528,7 @@
             >
                     <v-img
                         contain
+                        eager
                         :src="require('~/assets/images/Values Mid.png')"
                      />
             </v-col>
@@ -546,6 +557,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="challenge-img"
                         :src="require('~/assets/images/values onboarding.png')"
                      />
@@ -605,6 +617,7 @@
                     <v-img
                         contain
                         class="context-img"
+                        eager
                         :src="require('~/assets/images/Sessions.png')"
                      />
             </v-col>
@@ -640,6 +653,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/Miro1.png')"
                      />
@@ -715,6 +729,7 @@
                 <v-img
                 contain
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/excel values.png')"
                      />
             </v-col>
@@ -757,6 +772,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/score.png')"
                      />
@@ -772,6 +788,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/terms.png')"
                      />
@@ -803,6 +820,7 @@
             >
                     <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/info overload.png')"
                      />
@@ -825,6 +843,7 @@
             <v-col cols="8" md="4" class="justify-center pb-5" >
                 <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/values sus 1.png')"
                      />
@@ -841,6 +860,7 @@
             <v-col cols="8" md="4" class="justify-center pb-5" >
                 <v-img
                         contain
+                        eager
                         class="context-img"
                         :src="require('~/assets/images/NPS values 1.png')"
                      />
@@ -867,6 +887,7 @@
             <v-col cols="10" md="8" class="text-center lo">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/landing comparison.png')"
                      />
             </v-col>
@@ -875,6 +896,7 @@
             <v-col cols="10" md="8" class="text-center lo">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/domain comparison.png')"
                      />
             </v-col>
@@ -883,6 +905,7 @@
             <v-col cols="10" md="8" class="text-center lo">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/rating comparison.png')"
                      />
             </v-col>
@@ -891,6 +914,7 @@
             <v-col cols="10" md="8" class="text-center lo">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/data comparison.png')"
                      />
             </v-col>
@@ -900,6 +924,7 @@
                 <p>Values Compass - All Screens (Final Version Design)</p>
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/Values Compass Screens.png')"
                      />
             </v-col>
@@ -926,6 +951,7 @@
                 <v-img
                         contain
                         class="context-img"
+                        eager
                         :src="require('~/assets/images/values sus 2.png')"
                  />
                 <p>
@@ -942,6 +968,7 @@
                 <v-img
                         contain
                         class="context-img"
+                        eager
                         :src="require('~/assets/images/NPS values 2.png')"
                      />
                 

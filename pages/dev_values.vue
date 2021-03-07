@@ -127,6 +127,7 @@
             <v-col cols="10" md="6">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/stack.png')"
                      />
             </v-col>
@@ -176,6 +177,7 @@
             <v-col cols="10" md="3">
                 <v-img
                     class="text-center"
+                    eager
                     :src="require('~/assets/images/folderStruct.png')"
                      />
             </v-col>
@@ -272,6 +274,7 @@ computed: {
                 <v-img
                     class="text-center"
                     contain
+                    eager
                     :src="require('~/assets/images/cards_nomask.png')"
                      />
             </v-col>
@@ -334,6 +337,7 @@ radarChartData() {
                 <v-img
                     class="text-center"
                     contain
+                    eager
                     :src="require('~/assets/images/radar.png')"
                      />
             </v-col>
@@ -354,6 +358,7 @@ radarChartData() {
                 <v-img
                     class="text-center"
                     contain
+                    eager
                     :src="require('~/assets/images/card_values.png')"
                      />
             </v-col>
@@ -395,6 +400,7 @@ radarChartData() {
                 <v-img
                     class="text-center"
                     contain
+                    eager
                     :src="require('~/assets/images/tabs.png')"
                      />
             </v-col>
@@ -460,6 +466,7 @@ export default {
                 <v-img
                     class="text-center"
                     contain
+                    eager
                     :src="require('~/assets/images/keywords_chips.png')"
                      />
             </v-col>
