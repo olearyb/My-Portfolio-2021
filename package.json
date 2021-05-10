@@ -14,7 +14,7 @@
     "@nuxtjs/pwa": "^3.3.4",
     "core-js": "^3.8.2",
     "highlight.js": "^10.6.0",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.15.5",
     "nuxt-highlightjs": "^1.0.1",
     "vue-code-highlight": "^0.7.6",
     "vue-plausible": "^1.1.3",
