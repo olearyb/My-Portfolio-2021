@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "@nuxtjs/svg": "^0.1.12",
-    "@nuxtjs/vuetify": "^1.11.3"
+    "@nuxtjs/vuetify": "^1.12.1"
   }
 }
