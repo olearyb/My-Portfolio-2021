@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
-    "@nuxtjs/cloudinary": "^1.0.3-beta-3",
+    "@nuxtjs/cloudinary": "^1.0.3",
     "@nuxtjs/pwa": "^3.3.4",
     "core-js": "^3.8.2",
     "highlight.js": "^10.6.0",
