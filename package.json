@@ -22,7 +22,7 @@
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
-    "@nuxtjs/svg": "^0.1.12",
+    "@nuxtjs/svg": "^0.2.0",
     "@nuxtjs/vuetify": "^1.11.3"
   }
 }
