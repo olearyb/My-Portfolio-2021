@@ -12,7 +12,7 @@
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/cloudinary": "^1.0.3-beta-3",
     "@nuxtjs/pwa": "^3.3.4",
-    "core-js": "^3.8.2",
+    "core-js": "^3.23.3",
     "highlight.js": "^10.6.0",
     "nuxt": "^2.14.12",
     "nuxt-highlightjs": "^1.0.1",
